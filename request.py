@@ -4,10 +4,12 @@ import urllib.request
 file = urllib.request.urlopen('http://www.baidu.com')
 data = file.read()
 dataline = file.readline()
-fhandle = open('/home/hj/python/pythoncode/url/1.html','wb')
+fhandle = open('/home/hj/pachong/1.html','wb')
 fhandle.write(data)
 fhandle.close()
-filename = urllib.request.urlretrieve('http://edu.51cto.com',filename = '/home/hj/python/pythoncode/url/2.html')
+
+
+filename = urllib.request.urlretrieve('http://edu.51cto.com',filename = '/home/hj/pachong/2.html')
 urllib.request.urlcleanup()
 print(file.info())
 print(file.getcode())
