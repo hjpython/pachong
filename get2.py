@@ -7,6 +7,6 @@ url = 'http://baidu.com/s?wd='
 url_all = url + key_code
 req = urllib.request.Request(url_all)
 data = urllib.request.urlopen(req).read()
-fhandle = open('/home/hj/python/pythoncode/url/3.html','wb')
+fhandle = open('/home/hj/python/pythoncode/url/4.html','wb')
 fhandle.write(data)
 fhandle.close()
