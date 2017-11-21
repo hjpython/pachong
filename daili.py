@@ -7,6 +7,6 @@ def use_proxy(proxy_addr,url):
     urllib.request.install_opener(opener)
     data = urllib.request.urlopen(url).read().decode('utf-8')
     return data
-proxy_addr = '182.46.217.90:808'
+proxy_addr = '61.135.217.7:80'
 data = use_proxy(proxy_addr,'http://www.baidu.com')
 print(len(data))
