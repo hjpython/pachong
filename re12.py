@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 import re 
-string1 = 'abpythonhellomypythonhispythonourpythonend'
-string2 = 'apythonhellomypythonhispythonourpythonend'
+string1 = 'abpythonhellomypythonhispythonourpythonendd'
+string2 = 'apythonhellomypythonhispythonourpythonendd'
 pattern = '.python.'
 result1 = re.match(pattern,string1)
 result2 = re.match(pattern,string2)
