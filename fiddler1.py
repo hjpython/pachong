@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
+#可抓包示例
 import urllib.request
 import http.cookiejar
 url = 'http://www.baidu.com/'
