@@ -2,7 +2,6 @@
 # coding=utf-8
 import urllib.request
 import http.cookiejar
-#url = 'http://news.163.com/16/0825/09/BVA8A9U500014SEH.html'
 url = 'http://news.163.com/16/0825/09/BVA8A9U500014SEH.html'
 cjar = http.cookiejar.CookieJar()
 proxy = urllib.request.ProxyHandler({'http':'192.168.110.1:8888'})
