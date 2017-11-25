@@ -11,3 +11,4 @@ class WeisuenSpider(scrapy.Spider):
         item = MypjtItem()
         item['title'] = response.xpath('/html/head/title/text()')
         print(item['title'])
+        return item

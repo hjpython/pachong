@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for mypjt project
+# Scrapy settings for autopjt project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'mypjt'
+BOT_NAME = 'autopjt'
 
-SPIDER_MODULES = ['mypjt.spiders']
-NEWSPIDER_MODULE = 'mypjt.spiders'
+SPIDER_MODULES = ['autopjt.spiders']
+NEWSPIDER_MODULE = 'autopjt.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'mypjt (+http://www.yourdomain.com)'
+#USER_AGENT = 'autopjt (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -33,7 +33,7 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'mypjt.middlewares.MypjtSpiderMiddleware': 543,
+#    'autopjt.middlewares.AutopjtSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'mypjt.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'autopjt.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'mypjt.pipelines.MypjtPipeline': 300,
+    'autopjt.pipelines.AutopjtPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

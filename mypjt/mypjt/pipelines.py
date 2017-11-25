@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#from scrapy.conf import settings
 import codecs
 # Define your item pipelines here
 #

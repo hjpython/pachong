@@ -7,10 +7,10 @@ from mycwpjt.items import MycwpjtItem
 class WeisuenSpider(CrawlSpider):
     name = 'weisuen'
     allowed_domains = ['sohu.com']
-    start_urls = ['http://sohu.com/']
+    start_urls = ['http://news.sohu.com/']
 
     rules = (
-        Rule(LinkExtractor(allow=('.*?/n.*?shtml'),allow_domains=('sohu.com'), callback='parse_item', follow=True),
+        Rule(LinkExtractor(allow=('.*?/n.*?shtml'),allow_domains=('sohu.com')), callback='parse_item', follow=True),
     )
 
     def parse_item(self, response):
